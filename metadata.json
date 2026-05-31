@@ -1,0 +1,6 @@
+{
+  "name": "DropshoppStudio",
+  "description": "Premium print-on-demand e-commerce application and live print sandbox.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

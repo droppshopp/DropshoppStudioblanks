@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&family=Outfit:wght@400;500;700;800;900&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Neo-Brutalist Bento Shadows */
+.shadow-neo-red {
+  box-shadow: 8px 8px 0px 0px #FF5A5F;
+}
+.shadow-neo-teal {
+  box-shadow: 8px 8px 0px 0px #4ECDC4;
+}
+.shadow-neo-black {
+  box-shadow: 8px 8px 0px 0px #000000;
+}
+.shadow-neo-yellow {
+  box-shadow: 8px 8px 0px 0px #FFE66D;
+}
+.shadow-neo-small-black {
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+.shadow-neo-small-white {
+  box-shadow: 4px 4px 0px 0px #ffffff;
+}
+.shadow-neo-small-red {
+  box-shadow: 4px 4px 0px 0px #FF5A5F;
+}
+
+/* Custom visual micro-animations */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(0.97);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar layout for clean cards aesthetics */
+.content-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.content-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.content-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #e5e5e0;
+  border-radius: 20px;
+}
+
